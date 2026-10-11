@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planet - Planetary Facts</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">
+        <div class="logo-icon">
+          <img src="./Image/Pic 1.png" alt="planet icon" class="planet-logo-img">
+        </div>
+    </div>
+   <div style="display:flex; align-items:center; gap:12px;">
+      <button id="themeToggle" style="display:flex; align-items:center; gap:6px; border:none; background:none; cursor:pointer; font-weight:700; letter-spacing:2px; font-size:14px;">
+        <span id="themeText">DARK</span>
+        <i id="themeIcon" class="ri-moon-fill" style="font-size:20px;"></i>
+      </button>
+   </div>
+  </div>
+</header>
+
+
+<!-- No Results Popup - Same as Figma -->
+                <div id="noResultsPopup" class="popup-overlay">
+                  <div class="popup-card">
+                    <div class="popup-header">
+                      <span class="popup-dark"></span>
+                      <span class="search-icon"></span>
+                      <span id="popupSearchTerm">rddki</span>
+                      <span class="no-results-text">No results</span>
+                      
+                    </div>
+                    <div class="popup-content">
+                      <h3>No results found!</h3>
+                      <p>We couldn't find any planet matching your search. Please double check the name and try again.</p>
+                    </div>
+                  </div>
+                </div>
+
+<!-- Main Content -->
+<main class="main">
+  <section class="search-wrap">
+    <div class="search-row">
+      <div>
+        <fieldset class="search-fieldset">
+          <i class="ri-search-2-line"></i>
+          <input id="searchInput" class="search-input" placeholder="Search planet name" type="text" />
+          <button class="search-btn" id="searchBtn">Search</button>
+        </fieldset>
+      </div>
+     
+    </div>
+    <div class="search-meta" id="searchMeta" style="display:none"></div>
+  </section>
+
+  <section class="featured" id="featured">
+    <div class="card">
+      <div class="card-top">
+        <div class="planet-visual">
+          <div class="planet-circle" id="planetCircle">
+             <img id="planetImage" class="planet-img" src="" alt="planet"
+             style="width:100%;height:100%;object-fit:cover;border-radius:999px;"> 
+            <div class="planet-highlight"></div>
+            <div id="planetRing" class="planet-ring" style="display:none"></div>
+          </div>
+        </div>
+        <div class="planet-content">
+          <div class="planet-title-row">
+            <div class="planet-icon">
+            </div>
+            <div class="planet-name" id="planetName">
+              Earth
+            </div>
+            <div class="group-label" id="planetGroup">Terrestrial</div>
+          </div>
+          <div>
+          <p class="subtitle" id="planetSubtitle">The only planet known to support life The only planet to support life with liquid water on its surface.</p>
+          </div>
+        </div>
+      </div>
+      <div class="stats3">
+        <div class="stat-box"><div class="label">Velocity</div><div class="value" id="statVelocity">9.8</div><div class="unit">m/s²</div></div>
+        <div class="stat-box"><div class="label">Mass</div><div class="value" id="statMass">5.97</div><div class="unit">10^24kg</div></div>
+        <div class="stat-box"><div class="label">Period</div><div class="value" id="statPeriod">365</div><div class="unit">days</div></div>
+      </div>
+      <div class="stats2">
+        <div class="stat-icon-row"><div class="icon-bubble">◐</div><div><div class="s-label">Tilt</div><div class="s-value" id="statTilt">23.4°</div></div></div>
+        <div class="stat-icon-row"><div class="icon-bubble">◎</div><div><div class="s-label">Distance</div><div class="s-value" id="statDistance">149.6M km</div></div></div>
+        <div class="stat-icon-row"><div class="icon-bubble">⬇</div><div><div class="s-label">Gravity</div><div class="s-value" id="statGravity">9.8 m/s²</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="facts" id="facts">
+    <h2>Planetary Facts at a Glance</h2>
+    <p>Below is a comparative table of major planets in our solar system. The table highlights key physical properties used by astronomers and researchers worldwide.</p>
+  </section>
+    <!-- Table Section -->
+  <section class="table-wrap" id="table">
+    <div class="table-card">
+      <div class="table-header"><h3>Data about the planets of our solar system (Planetary facts taken from NASA)</h3></div>
+      <div class="table-scroll">
+        <table>
+          <div class="table-wrapper">
+          <thead><tr><th></th><th>Name</th><th>Mass (10^24kg)</th><th>Diameter (km)</th></tr></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+        </div>
+      </div>
+      <div class="table-foot">Data source: NASA Planetary Fact Sheet. Velocity is orbital? Mass relative, etc.</div>
+    </div>
+  </section>
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-about">
+      <h4>About</h4>
+      <p style="margin-top:8px;font-size:13px;color:#71717a;line-height:1.6">This is a simple planet information website built to showcase planetary facts. <br>Search any planet to see details.</p>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-right"><span class="footer-text" style="margin-top:8px;font-size:13px;color:#71717a;line-height:1.6">©2025 Design by <a href="http://amakandukwu.com/" target="_blank">Amara N.</a> <br> By Group 11. <br> <a href="https://tsacademyonline.com/" target="_blank">TS Academy</a>. <br>All rights reserved.</span>
+      </div>
+    </div>
+    <div>
+      <div class="Group-members">
+        <span style="margin-top:8px;font-size:13px;color:#71717a;line-height:1.6;align-items:center;display:flex;flex-direction:column">List name of group members</span>
+        <ul style="margin-top:8px;font-size:13px;color:#71717a;line-height:1.6;text-decoration:none;list-style:none;align-items:center;display:flex;flex-direction:column">
+          <li style="margin-top:8px;font-size:13px;color:#71717a;line-height:1.6">John Doe</li>
+          <li style="margin-top:8px;font-size:13px;color:#71717a;line-height:1.6">Jane Smith</li>
+          <li style="margin-top:8px;font-size:13px;color:#71717a;line-height:1.6">Bob Johnson</li>
+        </ul>
+      </div>
+    </span>
+    </div>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
