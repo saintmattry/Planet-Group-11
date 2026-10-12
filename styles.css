@@ -502,16 +502,7 @@ body.dark .stat-box .value, body.dark #themeToggle
   letter-spacing: -0.02em;
   color: #ffffff;
 }
-/* .name-badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 5px 12px;
-  border: 1.8px solid var(--green);
-  border-radius: 3px;
-  background: #fff;
-  font-size: 18px;
-  font-weight: 700;
-} */
+
 
 /* --- 6. STATS --- */
 .stats3 {
