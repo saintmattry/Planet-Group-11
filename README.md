@@ -81,7 +81,7 @@ showPopup(term) / hidePopup()	Controls No Results popup
 
 Group Members: 
 1. Daramola Ayodeji Matthew - https://github.com/saintmattry
-2.David Iwuagwu - https://github.com/dave-dll
+2. David Iwuagwu - https://github.com/dave-dll
 
 **How to run the project locally on VS Code**
 **Step 1** - Install a Live Server: Click on the extensions icon on the left-hand side of VS Code or press Ctrl+Shift+X. 
