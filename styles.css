@@ -464,7 +464,7 @@ body.dark .stat-box .value, body.dark #themeToggle
 .group-label {
   font-size: 14px;
   color: var(--muted);
-  margin-left: 8px;
+  margin-left: 1px;
   color: #1e40af;
 }
 .subtitle {
@@ -561,7 +561,7 @@ body.dark .stats2 {
   padding: 8px 20px 20px;
   margin-left: 25%; 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   gap: 12px;
   border-top: 1px solid #f4f4f5;
   margin-top: 4px;
@@ -1290,4 +1290,29 @@ a {
     width: 100%;
   }
 }
+/* input[placeholder="Search planet name"],
+#searchPlanet,
+.search-input {
+  padding-left: 10px !important;
+  text-indent: 8px !important;
+} */
+/* Make icon sit inside the input */
+.search-fieldset {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+}
 
+.search-fieldset .left {
+  position: absolute !important;
+  left: 16px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 5 !important;
+  color: #2372e8 !important;
+  pointer-events: none;
+}
+
+#searchInput, .search-input {
+  padding-left: 42px !important;
+}
