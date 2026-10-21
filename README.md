@@ -86,6 +86,9 @@ Group Members:
 5. Jacob Damilare - https://github.com/mydigitalerad-stack
 6. Alausa Mustapha - https://github.com/omobolacruise
 7. Peter Oluwadamilare Edeki - https://github.com/Edeki-dev
+8. Zeediqat Ajibike - https://github.com/Zamia0810
+9. Adeolu Gideon -  https://github.com/GiddyGiddy-1
+
 
 **How to run the project locally on VS Code**
 **Step 1** - Install a Live Server: Click on the extensions icon on the left-hand side of VS Code or press Ctrl+Shift+X.
